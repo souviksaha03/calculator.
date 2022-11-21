@@ -1,0 +1,11 @@
+#classa{
+    position: relative;
+}
+
+.one{
+    position: absolute;
+    background-color: red;
+    height: 20%;
+    width:50% ;
+}
+

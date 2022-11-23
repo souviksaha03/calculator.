@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,50 +12,57 @@
         position: absolute;
         
       }
-   .one{
-            text-align: center;
-            background-color: none;
-            height: 5rem;
-            width: 100%;
-            font-size: 5rem;
-            padding: 4rem;
-            margin-top: 4rem;
-            display: inline-block;
-            color: crimson;
+      body{
+        background-image: url(calimg.jpg);
+        background-repeat: no-repeat;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        z-index: 21;
+      }
+        .one{
             
+    
+                background-color: transparent;
+                height: 5rem;
+                text-align: center;
+                text-decoration: double;
+                font-size: xx-large;
+        
         }
         input{
             font-size: x-large;
           align-items: center;
           width: 5rem;
           
-          
-          
         }
         table{
-          margin: auto;
-          margin-top: 2%;
+            background-color: transparent;
+            height: 5rem;
+            text-align: center;
+            text-decoration: double;
+            font-size: xx-large;
+           margin-left: 45% ;
         }
         #sou{
-               /* position: fixed; */
-    margin-left: 39%;
+
+    margin-left: 34%;
     /* margin-bottom: 40vw; */
     padding: 0.5rem;
-    width: auto;
+    width:27rem;
     background: transparent;
     border-color: none;
     border: 0vmax
-          
         }
     .three{
     border: 0.5rem;
     border-color:red ;
     }
-    .inp{
-    
-      text-align: left;
-      
-      
+   
+   
+    .p{
+        margin-top: 6rem;
+        margin-left: 10%;
     }
 @media(max-width:998px) {
   html{
@@ -72,49 +80,51 @@
     </style>
 </head>
 <body>
-   <div class="three">
+  
         <div class="one" >
             
           CALCULATOR
-         
+      
+        </div>
+        <div class="p">
+            <form name="oo">
+            <th><input type="text" name="ans" id="sou"></th>
+        </form>
         </div>
          <div class="two">
         <form name="second">
            
-        <th><input type="text" name="ans" id="sou" class="inp"></th>
-        
+        <!-- <th><input type="text" name="ans" id="sou"></th> -->
       
         <table>
-          
           <tr>
-            <td><br><input type="button" value="1" onclick="second.ans.value+='1'"></td>
-            <td><br><input type="button" value="2" onclick="second.ans.value+='2'"></td>
-            <td><br><input type="button" value="3" onclick="second.ans.value+='3'"></td>
-            <td><br><input type="button" value="+" onclick="second.ans.value+='+'"></td>
+            <td><br><input type="button" value="1" onclick="oo.ans.value+='1'"></td>
+            <td><br><input type="button" value="2" onclick="oo.ans.value+='2'"></td>
+            <td><br><input type="button" value="3" onclick="oo.ans.value+='3'"></td>
+            <td><br><input type="button" value="+" onclick="oo.ans.value+='+'"></td>
             </tr>
-           <tr><td><br><input type="button" value="4" onclick="second.ans.value+='4'"></td>
-            <td><br><input type="button" value="5" onclick="second.ans.value+='5'"></td>
-            <td><br><input type="button" value="6" onclick="second.ans.value+='6'"></td>
-            <td><br><input type="button" value="-" onclick="second.ans.value+='-'"></td>
+           <tr><td><br><input type="button" value="4" onclick="oo.ans.value+='4'"></td>
+            <td><br><input type="button" value="5" onclick="oo.ans.value+='5'"></td>
+            <td><br><input type="button" value="6" onclick="oo.ans.value+='6'"></td>
+            <td><br><input type="button" value="-" onclick="oo.ans.value+='-'"></td>
             </tr>
             <tr>
-            <td><br><input type="button" value="7" onclick="second.ans.value+='7'"></td>
-            <td><br><input type="button" value="8" onclick="second.ans.value+='8'"></td>
-            <td><br><input type="button" value="9" onclick="second.ans.value+='9'"></td>
-            <td><br><input type="button" value="*" onclick="second.ans.value+='*'"></td></tr>
+            <td><br><input type="button" value="7" onclick="oo.ans.value+='7'"></td>
+            <td><br><input type="button" value="8" onclick="oo.ans.value+='8'"></td>
+            <td><br><input type="button" value="9" onclick="oo.ans.value+='9'"></td>
+            <td><br><input type="button" value="*" onclick="oo.ans.value+='*'"></td></tr>
 
             <tr>
-                <td><br><input type="button" value="/" onclick="second.ans.value+='/'"></td>
-                <td><br><input type="button" value="." onclick="second.ans.value+='.'"></td>
-                <td><br><input type="button" value="=" onclick="second.ans.value=eval(second.ans.value)"></td>
-                <td><br><input type="button" value="0" onclick="second.ans.value+='0'"></td>
+                <td><br><input type="button" value="/" onclick="oo.ans.value+='/'"></td>
+                <td><br><input type="button" value="." onclick="oo.ans.value+='.'"></td>
+                <td><br><input type="button" value="=" onclick="oo.ans.value=eval(oo.ans.value)"></td>
+                <td><br><input type="button" value="0" onclick="oo.ans.value+='0'"></td>
                 
-                <tr><td><input type="button" value="c" onclick="second.ans.value = ' '"></td></td></tr>
+                <tr><td><input type="button" value="c" onclick="oo.ans.value = ' '"></td></td></tr>
         </table>
    
         </form>
     </div>
-</div>
   
 </body>
 </html>
